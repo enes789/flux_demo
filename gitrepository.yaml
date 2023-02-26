@@ -5,6 +5,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s
-  url: https://github.com/enes789/flux_demo.git
+  url: ssh://git@github.com/enes789/flux_demo
   ref:
     branch: main
+  secretRef:
+    name: podinfo-auth 
